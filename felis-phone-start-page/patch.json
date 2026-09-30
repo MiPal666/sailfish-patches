@@ -5,5 +5,5 @@
     "version": "1.0.0",
     "category": "phone",
     "description": "Choose whether Phone opens with Dialer, History or Contacts.",
-    "compatible": [ "5.2.0.17" ]
+    "compatible": ["5.2.0.17","5.2.0.18"]
 }

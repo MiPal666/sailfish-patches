@@ -1,3 +1,6 @@
 */.work/
 *-webcatalog.zip
 *.bundle
+
+/_rpm-build/
+*.rpm

@@ -41,7 +41,7 @@ They can be installed manually or through the Patchmanager Web Catalog when avai
 
 Current versions are made for:
 
-- Sailfish OS 5.2.0.17
+- Sailfish OS 5.2.0.17 and OS 5.2.0.18
 - Jolla Phone 2026
 
 System QML files may change between Sailfish OS releases, so compatibility should be checked after an OS update.

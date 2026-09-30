@@ -5,5 +5,5 @@
     "version": "1.0.0",
     "category": "phone",
     "description": "Shows the caller photo clearly without blur, uses a clean black layout for call information and controls, and removes the large green swipe overlay.",
-    "compatible": [ "5.2.0.17" ]
+    "compatible": ["5.2.0.17","5.2.0.18"]
 }

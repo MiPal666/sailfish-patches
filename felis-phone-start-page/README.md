@@ -35,7 +35,7 @@ Values:
 Tested on:
 
 - Jolla Phone 2026
-- Sailfish OS 5.2.0.17
+- Sailfish OS 5.2.0.17 and OS 5.2.0.18
 - Patchmanager 3
 
 ## Files
