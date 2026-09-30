@@ -1,0 +1,57 @@
+--- a/usr/share/voicecall-ui-jolla/calling/CallDialog.qml
++++ b/usr/share/voicecall-ui-jolla/calling/CallDialog.qml
+@@ -93,16 +93,25 @@
+         Component {
+             id: wallpaperComponent
+ 
+-            ThemeImageWallpaper {
+-                id: avatarImage
++            Rectangle {
++                id: callerPhotoBackground
++                parent: __silica_applicationwindow_instance
++                anchors.fill: parent
++                color: "black"
++                z: -1
+ 
+-                explicitFilters: GlassBlur {
+-                    kernel: Kernel.gaussian(Kernel.SampleSize9)
++                property alias imageUrl: avatarImage.source
+ 
+-                    repetitions: 2
+-                }
++                Image {
++                    id: avatarImage
+ 
+-                sourceSize.height: Screen.width / (4 * Theme.pixelRatio)
++                    width: parent.width * 0.82
++                    height: width
++                    anchors.horizontalCenter: parent.horizontalCenter
++                    y: parent.height * 0.33
++
++                    fillMode: Image.PreserveAspectFit
++                }
+             }
+         }
+     }
+--- a/usr/share/voicecall-ui-jolla/calling/IncomingCallControl.qml
++++ b/usr/share/voicecall-ui-jolla/calling/IncomingCallControl.qml
+@@ -178,7 +178,10 @@
+         anchors {
+             horizontalCenter: parent.horizontalCenter
+             verticalCenter: parent.verticalCenter
+-            verticalCenterOffset: (hangupIndicator.height + spacing) / 2 + incomingCallControl.maxVerticalTranslate - Theme.paddingLarge * 3
++            verticalCenterOffset: (hangupIndicator.height + spacing) / 2
++                                  + incomingCallControl.maxVerticalTranslate
++                                  - Theme.paddingLarge * 3
++                                  + parent.height * 0.08
+         }
+         transform: Translate {
+             id: verticalGestureTranslate
+@@ -447,6 +450,7 @@
+     Rectangle {
+         id: acceptIndicatorRectangle
+ 
++        visible: false
+         width: parent.width
+         height: parent.height
+         color: "#00bb15"

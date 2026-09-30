@@ -1,0 +1,9 @@
+{
+    "author": "MiPal",
+    "name": "felis-phone-start-page",
+    "display_name": "Phone Start Page",
+    "version": "1.0.0",
+    "category": "phone",
+    "description": "Choose whether Phone opens with Dialer, History or Contacts.",
+    "compatible": [ "5.2.0.17" ]
+}

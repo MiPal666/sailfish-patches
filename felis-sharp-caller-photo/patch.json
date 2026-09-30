@@ -1,0 +1,9 @@
+{
+    "author": "MiPal",
+    "name": "felis-sharp-caller-photo",
+    "display_name": "Sharp Caller Photo",
+    "version": "1.0.0",
+    "category": "phone",
+    "description": "Shows the caller photo clearly without blur, uses a clean black layout for call information and controls, and removes the large green swipe overlay.",
+    "compatible": [ "5.2.0.17" ]
+}

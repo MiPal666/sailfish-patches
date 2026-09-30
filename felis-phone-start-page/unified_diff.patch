@@ -1,0 +1,42 @@
+--- a/usr/share/voicecall-ui-jolla/pages/MainPage.qml
++++ b/usr/share/voicecall-ui-jolla/pages/MainPage.qml
+@@ -26,6 +26,12 @@
+         tabs.moveTo(1, TabViewAction.Immediate)
+     }
+ 
++    function switchToStartPage() {
++        var index = Number(startPageConfig.value)
++        if (isNaN(index) || index < 0 || index > 2) index = 0
++        tabs.moveTo(index, TabViewAction.Immediate)
++    }
++
+     function switchToDialer(tabViewAction) {
+         // pop until main page is on top
+         if (root !== pageStack.currentPage) {
+@@ -58,6 +64,15 @@
+         defaultValue: true
+     }
+ 
++    ConfigurationValue {
++        id: startPageConfig
++
++        key: "/feliscatus/phone/startPage"
++        defaultValue: 0
++    }
++
++    Component.onCompleted: switchToStartPage()
++
+     TabView {
+         id: tabs
+ 
+--- a/usr/share/voicecall-ui-jolla/main.qml
++++ b/usr/share/voicecall-ui-jolla/main.qml
+@@ -95,7 +95,7 @@
+     function reset() {
+         if (mainPage) {
+             mainPage.reset()
+-            mainPage.switchToCallHistory()
++            mainPage.switchToStartPage()
+             if (pageStack.currentPage != mainPage) {
+                 pageStack.pop(mainPage, PageStackAction.Immediate)
+             }
