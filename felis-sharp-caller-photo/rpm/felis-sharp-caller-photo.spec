@@ -1,6 +1,6 @@
 Name:       felis-sharp-caller-photo
 Version:    1.0.0
-Release:    2
+Release:    3
 Summary:    Sharp caller photo and cleaner call screen for Sailfish Phone
 Group:      System/Tools
 License:    MIT
