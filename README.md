@@ -2,7 +2,7 @@
 
 Small patches for Patchmanager 3 on Sailfish OS.
 
-Currently tested on Jolla Phone 2026 with Sailfish OS 5.2.0.17, 5.2.0.19 and 5.2.0.20
+Currently tested on Jolla Phone 2026 with Sailfish OS 5.2.0.17, 5.2.0.18 and 5.2.0.20
 
 ## Patches
 
@@ -41,7 +41,7 @@ They can be installed manually or through the Patchmanager Web Catalog when avai
 
 Current versions are made for:
 
-- Sailfish OS 5.2.0.17, 5.2.0.19 and 5.2.0.20
+- Sailfish OS 5.2.0.17, 5.2.0.18 and 5.2.0.20
 - Jolla Phone 2026
 
 System QML files may change between Sailfish OS releases, so compatibility should be checked after an OS update.
