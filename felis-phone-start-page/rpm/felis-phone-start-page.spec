@@ -1,6 +1,6 @@
 Name:       felis-phone-start-page
 Version:    1.0.0
-Release:    3
+Release:    4
 Summary:    Configurable start page for Sailfish Phone
 Group:      System/Tools
 License:    MIT
